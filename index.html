@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body class="contenedor_ac">
+
+  <div class="container mt-2">
+    <h2 class="text-center pt-2">
+      Ficha de trabajador  - RRHH
+    </h2>
+  </div>
+
+  <!-- Datos primer grupo   -->
+  <div class="container">
+    <div class="row pt-4 ">
+
+      <div class="col-12 col-md-4 col-lg-2 mb-2">
+        <label class="label_manu pb-1" for="fechaingreso">Inicio de Trabajo </label>
+        <input type="date" class="form-control form-control-sm " placeholder="First name" aria-label="First name" />
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3 mb-2">
+        <label class="label_manu pb-1" for="responsable">Tipo de Contrato</label>
+        <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" aria-describedby="">
+
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3 mb-2">
+        <label class="label_manu pb-1" for="responsable">Modalidad</label>
+        <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" aria-describedby="">
+
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-2 mb-2">
+        <label class="label_manu pb-1" for="fechaingreso">Vencimiento de Contrato </label>
+        <input type="date" class="form-control form-control-sm " placeholder="First name" aria-label="First name" />
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-2 mb-2">
+        <label class="label_manu pb-1" for="fechacese">Fecha de salida</label>
+        <input type="date" class="form-control form-control-sm " placeholder="First name" aria-label="First name" />
+      </div>
+
+
+    </div>
+
+    <div class="row pt-4 ">
+      <div class="col-12 col-md-5 col-lg-5">
+        
+          <label class="label_manu pb-1" for="fechaingreso">Ficha  </label>
+          <input type="file" class="form-control form-control-sm " placeholder="First name" aria-label="First name" />
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <nav class="container mt-5">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab" aria-controls="nav-home" aria-selected="true">Datos Personales</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+        role="tab" aria-controls="nav-profile" aria-selected="false">Datos laborales</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+        role="tab" aria-controls="nav-contact" aria-selected="false">Datos Academicos</button>
+      <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button"
+        role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+    </div>
+  </nav>
+
+  <!-- PESTAÑA 1  -->
+  <!-- PESTAÑA 1  -->
+
+  <div class="tab-content container-fluid " id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <!-- Datos Personales  -->
+      <!-- Datos Personales  -->
+
+      <div class="container  mt-3">
+
+        <div class="row card pb-3 mt-3  ">
+
+          <h5 class="card-header">&nbsp;</h5>
+
+          <div class="row pb-1">
+
+            <div class="col-12 col-md-4 col-lg-7 mt-1">
+              <label class="label_manu pb-1" for="Nombre">Nombre Apellido</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" aria-describedby="">
+
+            </div>
+
+            <div class="col-12 col-md-1 col-lg-2 mt-1">
+              <label class="label_manu pb-1" for="Estadocivil">DNI</label>
+              <input type="number" class="form-control form-control-sm" placeholder="" aria-label=""
+                aria-describedby="">
+
+            </div>
+
+            <div class="col-6 col-md-2 mt-1">
+              <label class="label_manu pb-1" for="Nacimiento">Fecha de Nacimiento</label>
+
+              <div class="input-group  ">
+                <input type="date" class="form-control form-control-sm" placeholder="" aria-label=""
+                  aria-describedby="">
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-1 mt-1">
+              <label class="label_manu pb-1" for="Correo">Edad</label>
+              <input type="number" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+
+          <!-- Linea 2 -->
+
+          <div class="row pb-1">
+
+            <div class="col-6 col-md-2 mt-1">
+              <label class="label_manu pb-1" for="Sexo">Sexo</label>
+              <select id="tipo-doc" class="form-control form-control-sm">
+                <option>Hombre </option>
+                <option>Mujer</option>
+
+              </select>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+              <label class="label_manu pb-1" for="Estadocivil">Estado Civil</label>
+              <select id="estadocivil" class="form-control form-control-sm">
+                <option>Soltero</option>
+                <option>Casado</option>
+                <option>Opción3</option>
+                <option>Opción4</option>
+                <option>Opción5</option>
+                <option>Opción6</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-md-3 mt-1">
+              <label class="label_manu pb-1" for="celular">Celular/Fijo</label>
+
+              <div class="input-group  ">
+                <input type="phone" class="form-control form-control-sm" placeholder="" aria-label=""
+                  aria-describedby="button-addon2">
+                
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 mt-1">
+              <label class="label_manu pb-1" for="Correo">Correo</label>
+              <input type="mail" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+
+          <!-- linea 3 otro   fila  -->
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-8 col-lg-8 mt-1">
+              <label class="label_manu pb-1" for="Direccion">Dirección</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="Distrito">Distrito</label>
+              <input type="text" class="form-control form-control-sm" name="" id="" placeholder="" aria>
+
+            </div>
+
+          </div>
+
+          <!-- otra fila  enfermedades  -->
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-4 col-lg-2 mt-1">
+              <label class="label_manu pb-1" for="TipoSangre">Tipo de Sangre</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2 mt-1">
+              <label class="label_manu pb-1" for="TipoSangre">Alergia a Medicamento</label>
+
+              <div class="input-group outline-primary ">
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
+                  aria-describedby="button-addon2">
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="TipoSangre">Enfermedades Congenitas</label>
+
+              <div class="input-group outline-primary ">
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
+                  aria-describedby="button-addon2">
+                
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="TipoSangre">Contacto de emergencia / Celular </label>
+
+              <div class="input-group outline-primary ">
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label=""
+                  aria-describedby="button-addon2">
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- otra fila  bancos -->
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-6 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="">Numero de Cuenta</label>
+              <input type="number" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="Banco">Banco</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="">
+
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-4 mt-1">
+              <label class="label_manu pb-1" for="Provincia">AFP/ONP</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Grupo Hijos-->
+
+
+        <div class="row card pb-3 mt-3">
+
+          <h5 class="card-header">Hijos</h5>
+          <div class=" row ">
+            <div class="col-12 col-md-6 col-lg-8  mt-1">
+              <label class="label_manu pb-1" for="Nombres">Nombres Apellidos</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="">
+
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-3  mt-1">
+              <label class="label_manu pb-1" for="Provincia">Fecha Nacimiento</label>
+
+              <input type="Date" class="form-control form-control-sm" placeholder="" aria-label="">
+
+
+            </div>
+
+            <div class="col-6 col-md-2 col-lg-1 mt-1">
+              <label class="label_manu pb-1" for="Edad">Edad</label>
+              <input type="Number" class="form-control form-control-sm" placeholder="" aria-label="">
+
+            </div>
+
+          </div>
+          <div class="col-2 mt-2 ">
+
+            <button type="button" class="btn btn-primary btn-sm">Agregar</button>
+
+          </div>
+        </div>
+
+        <!-- Grupo Familiares-->
+
+        <div class="row card pb-3 mt-3">
+          <h5 class="card-header">Familiares</h5>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-8  mt-1">
+              <label class="label_manu pb-1" for="Nombres">Nombres Apellidos</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="">
+            </div>
+            <div class="col-12 col-md-4 col-lg-4  mt-1">
+              <label class="label_manu pb-1" for="Filiación">Filiación</label>
+              <div class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="">
+              </div>
+            </div>
+          </div>
+          <div class="col-2 mt-2 ">
+
+            <button type="button" class="btn btn-primary btn-sm">Agregar</button>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SEGUNDA PESTAÑA  -->
+    <!-- SEGUNDA PESTAÑA  -->
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+      <!-- Datos Laborales  -->
+
+      <!-- Antecedentes laborales  -->
+
+      <div class="container contenedor_ac mt-3">
+
+
+        <div class="card mt-4">
+          <h5 class="card-header">Antecedente Laboral</h5>
+          <div class="card-body input-group">
+
+            <div class="row ">
+              <div class="col-12 col-md-3 col-lg-5">
+                <label class="label_manu pb-1" for="Empresa">Empresa</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-2">
+                <label class="label_manu pb-1" for="gerencia">Rubro</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-3">
+                <label class="label_manu pb-1" for="sede">Cargo</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-2">
+                <label class="label_manu pb-1" for="sede">Salida</label>
+                <input type="date" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-5">
+                <label class="label_manu pb-1" for="sede">Motivo</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-1  ">
+                <label class="label_manu pb-1" for="">&nbsp;</label>
+
+
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary btn-sm mb-3"><i
+                      class="bi bi-plus-circle-dotted"></i></button>
+                </div>
+
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Actualidad Laboral -->
+
+
+        <div class="card mt-4">
+          <h5 class="card-header">Actualidad laboral / Desarrollo Laboral</h5>
+          <div class="card-body input-group">
+
+            <div class="row pb-2">
+              <div class="col-12 col-md-3 col-lg-2">
+                <label class="label_manu pb-1" for="Empresa">Fecha de Ingreso </label>
+                <input type="date" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-2">
+                <label class="label_manu pb-1" for="gerencia">Area</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-2">
+                <label class="label_manu pb-1" for="sede">Sede</label>
+                <select id="Sede" class="form-control form-control-sm ">
+                  <option selected>Bambas</option>
+                  <option>Azanga.</option>
+                  <option>Shangrila</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-4">
+                <label class="label_manu pb-1" for="sede">Puesto</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2">
+                <label class="label_manu pb-1" for="sede">Jefe</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+
+              </div>
+
+              <div class="col-12 col-md-2">
+                <label class="label_manu pb-1" for="sede">Cargo Anterior</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+
+              </div>
+
+              <div class="col-1 col-md-1 col-lg-1  ">
+                <label class="label_manu pb-1" for="">&nbsp;</label>
+
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary btn-sm mb-3"><i
+                      class="bi bi-plus-circle-dotted"></i></button>
+                </div>
+
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+        <!-- Amonestaciones laborales  -->
+
+        <div class="card mt-4">
+          <h5 class="card-header">Amonestaciones laborales</h5>
+          <div class="card-body ">
+
+            <div class="row pb-2">
+              <div class="col-12 col-md-2 col-lg-3">
+                <label class="label_manu pb-1" for="Tipo">Tipo</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-3 col-lg-2">
+                <label class="label_manu pb-1" for="Fecha">Fecha</label>
+                <input type="date" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-12 col-md-2 col-lg-6">
+                <label class="label_manu pb-1" for="Motivo">Motivo</label>
+                <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+              </div>
+
+              <div class="col-1 col-md-1 col-lg-1  ">
+                <label class="label_manu pb-1" for="">&nbsp;</label>
+
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary btn-sm mb-3"><i
+                      class="bi bi-plus-circle-dotted"></i></button>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- PESTAÑA 3  -->
+    <!-- PESTAÑA 3  -->
+
+
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+      <!-- ESTUDIOS  -->
+      <!-- Pregrado  -->
+      <div class="card mt-4">
+        <h5 class="card-header">Pregrado </h5>
+        <div class="card-body ">
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-2 col-lg-3">
+              <label class="label_manu pb-1" for="Tipo">Universidad /Instituto</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <label class="label_manu pb-1" for="Tipo">Ciclo</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <label class="label_manu pb-1" for="Tipo">Grado</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+
+            <div class="col-12 col-md-2 col-lg-4">
+              <label class="label_manu pb-1" for="Tipo">Especialidad</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mt-4">
+        <h5 class="card-header">Postgrado</h5>
+        <div class="card-body ">
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-2 col-lg-3">
+              <label class="label_manu pb-1" for="Tipo">Universidad /Instituto</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <label class="label_manu pb-1" for="Tipo">Duracion</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-4">
+              <label class="label_manu pb-1" for="Tipo">Tema</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card mt-4">
+        <h5 class="card-header">Diplomado / Especialización/ Cursos</h5>
+        <div class="card-body ">
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-2 col-lg-3">
+              <label class="label_manu pb-1" for="Tipo">Universidad /Instituto</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <label class="label_manu pb-1" for="Tipo">Duracion</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-4">
+              <label class="label_manu pb-1" for="Tipo">Tema</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card mt-4">
+        <h5 class="card-header">Idiona Extranjero</h5>
+        <div class="card-body ">
+
+          <div class="row pb-2">
+            <div class="col-12 col-md-2 col-lg-3">
+              <label class="label_manu pb-1" for="Tipo">Idiona</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-2">
+              <label class="label_manu pb-1" for="Tipo">Nivel</label>
+              <select id="tipo-doc" class="form-control form-control-sm">
+                <option>Basico </option>
+                <option>Intermedio</option>
+                <option>Avanzado</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-md-2 col-lg-4">
+              <label class="label_manu pb-1" for="Tipo">Instituto</label>
+              <input type="text" class="form-control form-control-sm" placeholder="" aria-label="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="card mt-4">
+        <h5 class="card-header">Programación / Computación</h5>
+        <div class="card-body">
+
+          <div class="row pb-2">
+
+
+
+            <div class="table-responsive ">
+              <table class="table">
+                <thead>
+                  <tr class="table-warning">
+                    <th scope="col" class="">
+                      <div class="sizeprograma"> Programa</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="sizeno"> No</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="size-basico">Basico</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="size-intermedio">Medio</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Avanzado</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Actualización</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Inst./Univ.</div>
+                    </th>
+
+
+
+
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+
+                    <td class="">
+                      <div class="">Excel</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class=""></div>
+                    </td>
+                    <td class="">
+                      <div class=""></div>
+                    </td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class="">Word</div>
+                    </td>
+
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+
+
+
+
+                  </tr>
+                  <tr>
+
+                    <td class="">
+                      <div class="">Power Point</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+                  <tr>
+
+                    <td class="">
+                      <div class="">Project</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+                  <tr>
+
+                    <td class="">
+                      <div class="">Internet</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class="">Redes Sociales</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class="">Autocad</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class="">Visio</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class="">ERP (Sap ,otros)</div>
+                    </td>
+                    <td class="">
+                      <div class="">
+                        <div class="form-check size-no">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+
+
+
+
+                </tbody>
+
+              </table>
+            </div>
+
+
+
+
+
+            <div class="table-responsive ">
+              <table class="table">
+                <thead>
+                  <tr class="table-warning">
+                    <th scope="col" class="">
+                      <div class="sizeprograma"> Programa</div>
+                    </th>
+
+                    <th scope="col" class="">
+                      <div class="size-basico">Basico</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="size-intermedio">Medio</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Avanzado</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Actualización</div>
+                    </th>
+                    <th scope="col" class="">
+                      <div class="">Inst./Univ.</div>
+                    </th>
+
+
+
+
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="text">
+                        </div< /td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+                  </tr>
+
+                  <tr>
+
+                    <td class="">
+                      <div class=""><input class="form-control form-control-sm" type="text"></div>
+                    </td>
+
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="container">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="option1">
+
+
+
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="">
+                      <div class="">
+                        <input class="form-control form-control-sm" type="date">
+                      </div>
+                    </td>
+
+                    <td class=" ">
+                      <div class="sizeuniversidad">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </td>
+
+
+
+
+
+
+                  </tr>
+
+
+
+
+
+
+
+
+
+                </tbody>
+
+              </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">..rrr.
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

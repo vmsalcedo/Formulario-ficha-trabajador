@@ -1,0 +1,53 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif */
+
+.contenedor_manu{
+    background-color: rgb(247, 250, 252);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor_ac {
+    font-size: 12px;
+}
+
+/* icono del input sin bordes  */
+
+.input-group-text {
+    padding: 0px !important;
+} 
+.btn_acsa {
+    padding: 0px !important;
+}
+
+.btn_for {
+    height: 30px;
+    width: 40px;
+    background-color: rgb(5, 107, 202);
+    position: relative;
+    top:20px;
+    border-radius: 7px;
+    margin: 0px ;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;   
+}
+
+
+.sizeprograma{
+    width: 55px ;
+}
+
+.sizeno{
+    width: 20px;
+}
+
+.sizeuniversidad{
+    width: 400px ;
+}
