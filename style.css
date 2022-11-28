@@ -51,3 +51,28 @@
 .sizeuniversidad{
     width: 400px ;
 }
+
+.sizeinst{
+    width: 128px;
+}
+.sizeciclo{
+    width: 80px ;
+}
+.sizegrado{
+    width: 80px ;
+}
+.sizeespecialidad{
+    width: 200px;
+}
+.sizetema{
+    width: 300px;
+}
+.sizeprogramas{
+    width: 170px ;
+}
+.sizenivel{
+    width: 80px;
+}
+.sizeactualizacion{
+    width: 100px;
+}
