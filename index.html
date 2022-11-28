@@ -703,10 +703,8 @@
                 
                 </div>
 
-               
-
             </div>
-            <!-- actualidad laboral -->
+            <!--   Tabla actualidad laboral -->
             <div class="card-body">
               <div class="table-responsive"> 
                 <table class="table table-sm ">
@@ -722,7 +720,7 @@
                         <div class="sizesede">Sede</div>
                       </th>
                       <th>
-                        <div class="sizefecha">Puesto</div>
+                        <div class="sizepuesto ">Puesto</div>
                       </th>
                       <th>
                         <div class="sizejefe">Jefe</div>
@@ -764,15 +762,13 @@
 
             </div>
 
-            
-
           </div>
           <!-- Amonestaciones laborales  -->
 
           <div class="card mt-4 mb-4">
             <h5 class="card-header">Amonestaciones laborales</h5>
               <div class="card-body">
-              <div class="row pb-2 ">
+                <div class="row pb-2 ">
                 <div class="col-6 col-md-2 col-lg-3">
                   <label class="label_manu pb-1" for="Tipo">Tipo</label>
                   <input
@@ -816,18 +812,14 @@
                 </div>
 
 
-              </div>
-
-              
-
-              
+                </div>            
               </div>
 
             <!-- tabla amonestaciones  -->
 
               <div class="card-body">
-                          <div class="table-responsive"> 
-                            <table class="table table-sm ">
+                <div class="table-responsive"> 
+                  <table class="table table-sm ">
                               <thead>
                                 <tr class="table-primary">
                                   <th scope="col" >
@@ -860,13 +852,126 @@
                                 </tr>
                               </tbody>
             
-                            </table>
+                  </table>
             
-                          </div>
+                </div>
             
               </div>
           </div>
 
+          <!-- Vacaciones  -->
+          <div class="card mt-4 mb-4">
+            <h5 class="card-header ">Vacaciones</h5>
+            <div class="card-body">
+              <div class="row pb-2">
+                <div class="col-12 col-md-3 col-lg-2">
+                  <label class="label_manu pb-1" for="Fechainicio"
+                    >Fecha de Inicio
+                  </label>
+                  <input
+                    type="date"
+                    class="form-control form-control-sm"
+                    
+                  />
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-2">
+                  <label class="label_manu pb-1" for="Fechatermino"
+                    >Fecha de Termino
+                  </label>
+                  <input
+                    type="date"
+                    class="form-control form-control-sm"
+                    
+                  />
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-1">
+                  <label class="label_manu pb-1" for="Nrodias"
+                    >Nro Dias
+                  </label>
+                  <input
+                    type="number"
+                    class="form-control form-control-sm"
+                    
+                  />
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-6">
+                  <label class="label_manu pb-1" for="Tipovacaciones"
+                    >Tipo Vacaciones
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm"
+                    
+                  />
+                </div>
+
+                <div class="col-1 col-md-4 col-lg-1">
+                  <label class="label_manu pb-1" for="">&nbsp;</label>
+
+                  
+                    <div class="col-2">
+                      <button type="button" class="btn btn-primary btn-sm">
+                        Agregar
+                      </button>
+                    </div>
+                  
+                </div>
+
+              </div>
+
+            </div>
+            <!-- tabla vacaciones -->
+            <div class="card-body">
+              <div class="table-responsive"> 
+                <table class="table table-sm ">
+                  <thead>
+                              <tr class="table-primary">
+                                <th scope="col" >
+                                  <div class="sizefecha">Fecha Inicio</div>
+                                </th>
+                                <th>
+                                  <div class="sizefecha">fecha Termino </div>
+                                </th>
+                                <th class="">
+                                  <div class="sizedias">Nro Dias</div>
+                                </th>
+                                <th class="">
+                                  <div class="sizevacaciones">Tipo de Vacaciones</div>
+                                </th>
+                                
+                              </tr>
+          
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>
+                                  <div class="sizefecha">01/12/2022
+                                  </div>
+                      </td>
+                                <td>
+                                  <div class="sizefecha">31/12/2022</div>
+                                </td>
+                                <td>
+                                  <div class="sizedias">31 dias</div>
+                                </td>
+                                <td>
+                                  <div class="sizevacaciones">Lorem, ipsum dolor sit amet consectetur 
+                                  </div>
+                                </td>
+                               
+                    </tr>
+                  </tbody>
+          
+                </table>
+          
+              </div>
+          
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1252,8 +1357,8 @@
           </div>
             </div>
 
-                                    <!-- tabla de Diplomado / Especialización/ Cursos -->
-                                    <div class="card-body">
+              <!-- tabla de Diplomado / Especialización/ Cursos -->
+                <div class="card-body">
                                       <div class="table-responsive"> 
                                         <table class="table table-sm ">
                                           <thead>
@@ -1291,7 +1396,7 @@
                         
                                       </div>
                         
-                                    </div>
+                </div>
 
           </div>
 

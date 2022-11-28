@@ -114,8 +114,29 @@
 
 
 .sizefecha{
-    width: 60px;
+    width: 80px;
 }
 .sizearea{
-    width: 80px;
+    width: 100px;
+}
+.sizesede{
+    width: 100px;
+}
+.sizepuesto{
+    width: 130px;
+}
+
+.sizejefe{
+    width: 130px;
+}
+
+.sizecargo{
+    width: 180px;
+}
+
+.sizedias{
+    width: 60px;
+}
+.sizevacaciones{
+    width: 200px;
 }
