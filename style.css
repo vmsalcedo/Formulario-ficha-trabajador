@@ -76,3 +76,37 @@
 .sizeactualizacion{
     width: 100px;
 }
+
+
+
+.sizetipoamonestacion{
+    width: 140px;
+}
+
+.sizefechaamonestacion{
+    width: 100px;
+}
+
+.sizemotivoamonestacion{
+    width: 300px;
+}
+
+
+
+.sizeempresa{
+    width: 150px;
+}
+.sizefecha{
+    width: 100px;
+}
+
+.sizerubro{
+    width: 150px;
+}
+.sizecargo {
+    width: 150px;
+}
+
+.sizemotivo{
+    width: 400px ;
+}

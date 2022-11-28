@@ -495,6 +495,7 @@
         tabindex="0"
       >
         <!-- Datos Laborales  -->
+
         <!-- Antecedentes laborales  -->
 
         <div class="container mt-3">
@@ -522,7 +523,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-3">
+                <div class="col-6 col-md-2 col-lg-3">
                   <label class="label_manu pb-1" for="sede">Cargo</label>
                   <input
                     type="text"
@@ -532,7 +533,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-2">
+                <div class="col-6 col-md-2 col-lg-2">
                   <label class="label_manu pb-1" for="sede">Salida</label>
                   <input
                     type="date"
@@ -565,6 +566,57 @@
                 </div>
               </div>
             </div>
+            <!-- tabla de antecedentes laborales -->
+            <div class="card-body">
+              <div class="table-responsive"> 
+                <table class="table table-sm ">
+                  <thead>
+                    <tr class="table-primary">
+                      <th scope="col" >
+                        <div class="sizeempresa">Empresa</div>
+                      </th>
+                      <th>
+                        <div class="sizerubro">Rubro</div>
+                      </th>
+                      <th>
+                        <div class="sizecargo">Cargo</div>
+                      </th>
+                      <th>
+                        <div class="sizefecha">Fecha</div>
+                      </th>
+                      <th>
+                        <div class="sizemotivo">Motivo</div>
+                      </th>
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>I.S.T.F.V.D.C.
+                        </div>
+                      </td>
+                      <td>
+                        <div>Sexto Ciclo</div>
+                      </td>
+                      <td>
+                        <div>100 grados </div>
+                      </td>
+                      <td>
+                        <div>31/12/2022</div>
+                      </td>
+                      <td>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius asperiores quae qui ab, repellendus nemo exercitationem assumenda deserunt placeat inventore a laboriosam officiis pariatur, eum accusantium, amet possimus unde.</div>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                </table>
+
+              </div>
+
+            </div>
           </div>
 
           <!-- Actualidad Laboral -->
@@ -585,7 +637,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-2">
+                <div class="col-6 col-md-2 col-lg-2">
                   <label class="label_manu pb-1" for="gerencia">Area</label>
                   <input
                     type="text"
@@ -595,7 +647,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-2">
+                <div class="col-6 col-md-2 col-lg-2">
                   <label class="label_manu pb-1" for="sede">Sede</label>
                   <select id="Sede" class="form-control form-control-sm">
                     <option selected>Bambas</option>
@@ -604,7 +656,7 @@
                   </select>
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-3">
+                <div class="col-6 col-md-2 col-lg-3">
                   <label class="label_manu pb-1" for="sede">Puesto</label>
                   <input
                     type="text"
@@ -614,7 +666,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-6 col-md-3">
                   <label class="label_manu pb-1" for="sede">Jefe</label>
                   <input
                     type="text"
@@ -657,11 +709,11 @@
           </div>
           <!-- Amonestaciones laborales  -->
 
-          <div class="card mt-4">
+          <div class="card mt-4 mb-4">
             <h5 class="card-header">Amonestaciones laborales</h5>
-            <div class="card-body">
+              <div class="card-body">
               <div class="row pb-2 ">
-                <div class="col-12 col-md-2 col-lg-3">
+                <div class="col-6 col-md-2 col-lg-3">
                   <label class="label_manu pb-1" for="Tipo">Tipo</label>
                   <input
                     type="text"
@@ -671,7 +723,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-md-3 col-lg-2">
+                <div class="col-6 col-md-3 col-lg-2">
                   <label class="label_manu pb-1" for="Fecha">Fecha</label>
                   <input
                     type="date"
@@ -709,8 +761,52 @@
               
 
               
-            </div>
+              </div>
+
+            <!-- tabla amonestaciones  -->
+
+              <div class="card-body">
+                          <div class="table-responsive"> 
+                            <table class="table table-sm ">
+                              <thead>
+                                <tr class="table-primary">
+                                  <th scope="col" >
+                                    <div class="sizetipoamonestacion">Tipo</div>
+                                  </th>
+                                  <th>
+                                    <div class="sizefechaamonestacion">Fecha</div>
+                                  </th>
+                                  <th class="">
+                                    <div class="sizemotivoamonestacion">Motivo</div>
+                                  </th>
+                                  
+                                </tr>
+            
+                              </thead>
+            
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="sizetipoamonestacion">I.S.T.F.V.D.C.
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="sizefechaamonestacion">Sexto Ciclo</div>
+                                  </td>
+                                  <td>
+                                    <div class="sizemotivoamonestacion">100 grados </div>
+                                  </td>
+                                 
+                                </tr>
+                              </tbody>
+            
+                            </table>
+            
+                          </div>
+            
+              </div>
           </div>
+
         </div>
       </div>
 
@@ -726,17 +822,6 @@
       >
         <!-- ESTUDIOS  -->
       
-        
-
-
-
-
-
-
-
-
-        
-        
 
         <div class="container mt-3">
 
