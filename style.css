@@ -91,7 +91,7 @@
     width: 300px;
 }
 
-
+/* actualidad laboral */
 
 .sizeempresa{
     width: 150px;
@@ -109,4 +109,13 @@
 
 .sizemotivo{
     width: 400px ;
+}
+
+
+
+.sizefecha{
+    width: 60px;
+}
+.sizearea{
+    width: 80px;
 }
